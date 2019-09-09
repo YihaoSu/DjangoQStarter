@@ -1,0 +1,8 @@
+# Django
+Django==2.2.5
+
+# Environment variables configuration
+django-environ==0.4.5
+
+# Time zones support
+pytz==2019.2
