@@ -6,3 +6,6 @@ django-environ==0.4.5
 
 # Time zones support
 pytz==2019.2
+
+# Database
+psycopg2==2.8.3 --no-binary psycopg2
