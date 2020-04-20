@@ -8,4 +8,7 @@ django-environ==0.4.5
 pytz==2019.3
 
 # Database
-# psycopg2==2.8.5 --no-binary psycopg2
+psycopg2==2.8.5 --no-binary psycopg2
+
+# Task queue
+django-q==1.2.1

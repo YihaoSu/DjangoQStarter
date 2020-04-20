@@ -5,7 +5,7 @@ Base settings to build other settings files upon.
 import environ
 
 ROOT_DIR = environ.Path(__file__) - 3
-APPS_DIR = ROOT_DIR.path('starter')
+APPS_DIR = ROOT_DIR.path('django_q_starter')
 
 # Load operating system environment variables and then prepare to use them
 env = environ.Env()
@@ -47,6 +47,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    'django_q',
 ]
 
 # Apps specific for this project go here.
