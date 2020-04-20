@@ -19,7 +19,8 @@
 
 
 ## 使用方式  - 建立本地端的開發環境
-1.  下載此專案，並將DjangoProjectStarter/及starter/目錄更名為符合你的專案的名稱
+1.  下載此專案，並將DjangoProjectStarter/及starter/目錄更名為符合你的專案的名稱，並修改config/settings/
+/base.py檔案中的[APPS_DIR變數的值](https://github.com/YihaoSu/DjangoProjectStarter/blob/master/config/settings/base.py#L8)(將starter更名)。 
 ```shell
 git clone https://github.com/YihaoSu/DjangoProjectStarter.git
 ```
