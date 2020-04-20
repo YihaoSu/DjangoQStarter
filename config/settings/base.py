@@ -168,6 +168,16 @@ MEDIA_ROOT = str(ROOT_DIR('uploads'))
 # See: https://docs.djangoproject.com/en/2.2/ref/settings/#media-url
 MEDIA_URL = '/uploads/'
 
+# SETTINGS FOR DJANGO Q
+Q_CLUSTER = {
+    'name': 'DjangORM',
+    'workers': 1,
+    'timeout': 60,
+    'retry': 65,
+    'queue_limit': 50,
+    'bulk': 10,
+    'orm': 'default'
+}
 
 # SETTINGS FOR EMAILING
 EMAIL_BACKEND = env('EMAIL_BACKEND')
