@@ -25,17 +25,17 @@
 git clone https://github.com/YihaoSu/DjangoProjectStarter.git
 ```
 
-2. 利用[virtualenv](https://virtualenv.pypa.io/en/latest/)或[Conda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)建立獨立的開發環境 (Python 版本: 依你的專案所需)
+2. 依據你的專案所需，安裝並建立PostgreSQL或MySQL資料庫
 
-3. 啟動進入該開發環境後，輸入以下指令以便安裝專案所需的Python套件 (Django 版本: requirements檔是2.2 LTS, 依你的專案所需做變更)
+3. 依據你的開發環境(資料庫的帳密及資料庫名、DJANGO_SECRET_KEY等等)，修改dot_env_file_template檔中的設定值，並將檔名改為.env
+
+4. 利用[virtualenv](https://virtualenv.pypa.io/en/latest/)或[Conda](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)建立獨立的開發環境 (Python 版本: 依你的專案所需)
+
+5. 啟動進入該開發環境後，輸入以下指令以便安裝專案所需的Python套件 (Django 版本: requirements檔是2.2 LTS, 依你的專案所需做變更)
 ```shell
 cd 專案名稱
 pip install -r requirements/local.txt
 ```
-
-4. 依據你的專案所需，安裝並建立PostgreSQL或MySQL資料庫
-
-5. 依據你的開發環境(資料庫的帳密及資料庫名、DJANGO_SECRET_KEY等等)，修改dot_env_file_template檔中的設定值，並將檔名改為.env
 
 6. 在更名後的starter/目錄中，開發你專案所需的Django apps ，並擴充config/目錄中的設定檔及requirements/目錄中的套件需求檔
 
@@ -45,6 +45,6 @@ pip install -r requirements/local.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser # 有使用Django admin才需要
-python manage.py collectstatic # 會在專案根目錄中建立名為staticfiles的資料夾，並將各APP所屬static files彙集到此資料夾中
+python manage.py collectstatic # 有使用[static files](https://docs.djangoproject.com/en/2.2/howto/static-files/)才需要，會在專案根目錄中建立名為staticfiles的資料夾，並將各APP所屬static files彙集到此資料夾中
 python manage.py runserver
 ```
