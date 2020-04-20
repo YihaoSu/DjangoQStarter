@@ -7,3 +7,10 @@ DJANGO_SECRET_KEY=dV8IqhR6uGi80prymwzdH2G8hITQAVWiTxSAZ3gUQt4dm7YRMyIxfzUuDL1qQm
 # DATABASE_URL設定值寫法 mysql://USER:PASSWORD@HOST:PORT/NAME
 # See: https://github.com/kennethreitz/dj-database-url
 DATABASE_URL=postgres://webdev:123456789@localhost:3306/testdb
+
+# EMAIL
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=465
+EMAIL_HOST_USER=abc@gmail.com
+EMAIL_HOST_PASSWORD=xyz

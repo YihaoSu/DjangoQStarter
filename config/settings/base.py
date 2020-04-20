@@ -52,6 +52,7 @@ THIRD_PARTY_APPS = [
 
 # Apps specific for this project go here.
 LOCAL_APPS = [
+    'django_q_starter.email_example.apps.EmailExampleConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -166,3 +167,11 @@ MEDIA_ROOT = str(ROOT_DIR('uploads'))
 
 # See: https://docs.djangoproject.com/en/2.2/ref/settings/#media-url
 MEDIA_URL = '/uploads/'
+
+
+# SETTINGS FOR EMAILING
+EMAIL_BACKEND = env('EMAIL_BACKEND')
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_PORT = env('EMAIL_PORT')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
