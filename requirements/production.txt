@@ -1,4 +1,4 @@
 -r ./base.txt
 
 # WSGI HTTP Server 
-# gunicorn==20.0.4
+# gunicorn==20.1.0

@@ -1,4 +1,4 @@
 -r ./base.txt
 
 # Debug
-django-debug-toolbar==3.2
+django-debug-toolbar==3.2.1
